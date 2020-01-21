@@ -1,10 +1,12 @@
 import React from 'react';
+import mainTemplate from './components/mainTemplate';
 
-const App: React.FC = () => {
+// const App: React.FC = () => {
+function App () {
   return (
-    <div>
-      App
-    </div>
+    <mainTemplate>
+
+    </mainTemplate>
   );
 }
 

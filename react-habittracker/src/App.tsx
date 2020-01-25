@@ -4,8 +4,10 @@ import MainTemplate from './components/mainTemplate';
 // const App: React.FC = () => {
 function App () {
   return (
-    <MainTemplate> 
-      
+    <MainTemplate form={<div>Form</div>}> 
+      <div>
+        Children
+      </div>
     </MainTemplate>
   );
 }

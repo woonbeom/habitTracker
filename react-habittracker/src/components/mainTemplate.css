@@ -11,15 +11,19 @@
     font-size: 2.5rem;
     text-align: center;
     font-weight: 100;
-    background: #22b8cf;
+    background: #339af0;
     color: white;
 }
 
 .form-wrapper {
     padding: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
     border-bottom: 1px solid #22b8cf;
 }
 
 .habits-wrapper {
     min-height: 5rem;
+    font-size: 2.5rem;
+    text-align: center;
 }

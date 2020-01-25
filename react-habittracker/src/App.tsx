@@ -1,12 +1,12 @@
 import React from 'react';
-import mainTemplate from './components/mainTemplate';
+import MainTemplate from './components/mainTemplate';
 
 // const App: React.FC = () => {
 function App () {
   return (
-    <mainTemplate>
-
-    </mainTemplate>
+    <MainTemplate> 
+      
+    </MainTemplate>
   );
 }
 

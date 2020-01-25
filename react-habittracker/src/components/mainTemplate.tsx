@@ -12,10 +12,16 @@ function mainTemplate ({ form, children }: props) {
     return (
         <main className="main-template">
             <div className="title">
-                습관 만들기
+               My Habbits 
             </div>
             <section className="form-wrapper">
                 { form }
+            </section>
+            <section className="habits-wrapper">
+                { children }
+            </section>
+            <section className="habits-wrapper">
+                { children }
             </section>
             <section className="habits-wrapper">
                 { children }

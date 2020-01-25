@@ -7,12 +7,36 @@
 }
 
 .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
-    font-weight: 100;
+    font-weight: 600;
     background: #339af0;
     color: white;
+}
+
+.create-button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    line-height: 50%;
+    font-size: 3rem;
+    background: #22b8cf;
+    border-radius: 50%; /* div -> circle */
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.create-button:hover {
+    background: #3bc9db;
 }
 
 .form-wrapper {

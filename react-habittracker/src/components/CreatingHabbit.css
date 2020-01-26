@@ -1,0 +1,12 @@
+.title-input {
+    display: flex;
+}
+
+.title-input input {
+    flex: 1; 
+    align-items: center;
+    font-size: 1.25rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}

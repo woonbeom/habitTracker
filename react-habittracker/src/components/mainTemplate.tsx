@@ -20,9 +20,6 @@ function MainTemplate ({ form, onCreate ,children }: props) {
                     {/* TODO: + 버튼 꾸미기 */} 
                 </div>
             </div>
-            <section className="form-wrapper">
-                { form }
-            </section>
             <section className="habits-wrapper">
                 { children }
             </section>

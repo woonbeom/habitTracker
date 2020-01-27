@@ -1,7 +1,7 @@
 import React from 'react';
 import './CreatingHabbit_1.css'
 
-function CreatingHabbit () {
+function CreatingHabbit_1 () {
     return (
         <div>
             <div>
@@ -26,4 +26,4 @@ function CreatingHabbit () {
     );
 }
 
-export default CreatingHabbit;
+export default CreatingHabbit_1;

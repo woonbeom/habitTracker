@@ -1,5 +1,7 @@
 import React from 'react';
-import './CreatingHabbit_1.css'
+import { Input } from 'antd';
+// import './CreatingHabbit_1.css'
+import 'antd/dist/antd.css'
 
 function CreatingHabbit_1 () {
     return (
@@ -8,19 +10,19 @@ function CreatingHabbit_1 () {
                 Title
             </div>
             <div>
-                <input></input>
+                <Input placeholder="Title"/>
             </div>
             <div>
                 Cycle
             </div>
             <div>
-                Once in <input></input> days
+                Once in <Input placeholder="7"/> days
             </div>
             <div>
                 Action
             </div>
             <div>
-                <input></input>
+                <Input placeholder="Action"/>
             </div>
         </div>
     );

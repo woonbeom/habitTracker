@@ -1,5 +1,5 @@
 import React from 'react';
-import './CreatingHabbit.css'
+import './CreatingHabbit_1.css'
 
 function CreatingHabbit () {
     return (

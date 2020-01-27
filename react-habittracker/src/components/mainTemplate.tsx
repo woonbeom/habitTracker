@@ -16,9 +16,12 @@ function MainTemplate ({ form, onCreate ,children }: props) {
                 <div>
                     My Habbits
                 </div>
-                <div className="create-button" onClick={onCreate}>
-                    {/* TODO: + 버튼 꾸미기 */} 
-                </div>
+                {/* <div className="create-button" onClick={onCreate}>
+                    TODO: + 버튼 꾸미기
+                </div> */}
+                <button className="create-button" onClick={onCreate}>
+
+                </button>
             </div>
             <section className="habits-wrapper">
                 { children }

@@ -1,5 +1,7 @@
 import React from 'react';
+import { Button, Icon } from 'antd';
 import './MainTemplate.css';
+import 'antd/dist/antd.css';
 
 // 컴포넌트에 전달된 인자들에 대한 타입을 정의.
 type props = {
@@ -19,9 +21,8 @@ function MainTemplate ({ form, onCreate ,children }: props) {
                 {/* <div className="create-button" onClick={onCreate}>
                     TODO: + 버튼 꾸미기
                 </div> */}
-                <button className="create-button" onClick={onCreate}>
-
-                </button>
+                {/* <Button size='large' className='create-button'>Add</Button> */}
+                <Icon type="plus-circle" theme="twoTone" className="create-button" />
             </div>
             <section className="habits-wrapper">
                 { children }

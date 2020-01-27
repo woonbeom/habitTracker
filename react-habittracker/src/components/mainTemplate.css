@@ -24,15 +24,8 @@
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-left: 1rem;
-    text-align: center;
-    line-height: 50%;
-    font-size: 3rem;
-    background: #22b8cf;
-    border-radius: 50%; /* div -> circle */
-    color: white;
-    font-weight: 500;
-    cursor: pointer;
+    margin-left: 0.4rem;
+    margin-top: 0.5rem;
 }
 
 .create-button:hover {

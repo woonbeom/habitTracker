@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { DatePicker } from 'antd';
+import { DatePicker, Button } from 'antd';
 import 'antd/dist/antd.css'
 
 const { RangePicker } = DatePicker;
@@ -10,7 +10,16 @@ function onChange(date, dateString) {
 
 function CreatingHabbit_2 () {
     return (
-        <RangePicker onChange={onChange}/>
+        <div>
+            <div>
+                <RangePicker onChange={onChange}/>
+            </div>
+            <div>
+                <Button size='large' className='create-button'>Back</Button>
+                <Button size='large' className='create-button'>Next</Button>
+            </div>
+        </div>
+
     );
 }
 

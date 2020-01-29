@@ -1,16 +1,22 @@
 import React from 'react';
-import { Input } from 'antd';
-// import './CreatingHabbit_1.css'
+import { Link } from 'react-router-dom';
+import { Input, Button } from 'antd';
+import './CreatingHabbit_1.css'
 import 'antd/dist/antd.css'
 
-function CreatingHabbit_1 () {
+
+function HandleBackButton() {
+    <Link to="/"/>
+}
+
+function CreatingHabbit_1() {
     return (
         <div>
             <div>
                 Title
             </div>
             <div>
-                <Input placeholder="Title"/>
+                <Input placeholder="Title" className="long-input"/>
             </div>
             <div>
                 Cycle
@@ -22,7 +28,11 @@ function CreatingHabbit_1 () {
                 Action
             </div>
             <div>
-                <Input placeholder="Action"/>
+                <Input placeholder="Action" className="long-input"/>
+            </div>
+            <div>
+                <Button size='large' className='create-button' onClick={HandleBackButton}>Back</Button>
+                <Button size='large' className='create-button'>Add</Button>
             </div>
         </div>
     );

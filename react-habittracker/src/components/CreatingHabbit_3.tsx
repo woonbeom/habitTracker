@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Input, TimePicker, Checkbox } from 'antd';
+import { Input, TimePicker, Checkbox, Button } from 'antd';
 import './CreatingHabbit_3.css'
 import 'antd/dist/antd.css'
 import moment from 'moment';
@@ -36,6 +36,10 @@ function CreatingHabbit_3 () {
             </div>
             <div>
                 <TimePicker onChange={onTimePickerChange} defaultOpenValue={moment('00:00:00', 'HH:mm:ss')} />
+            </div>
+            <div>
+                <Button size='large' className='create-button'>Back</Button>
+                <Button size='large' className='create-button'>Next</Button>
             </div>
         </div>
     );

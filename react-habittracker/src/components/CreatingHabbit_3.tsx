@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Input, TimePicker, Checkbox, Button } from 'antd';
 import './CreatingHabbit_3.css'
 import 'antd/dist/antd.css'
@@ -38,7 +39,9 @@ function CreatingHabbit_3 () {
                 <TimePicker onChange={onTimePickerChange} defaultOpenValue={moment('00:00:00', 'HH:mm:ss')} />
             </div>
             <div>
-                <Button size='large' className='create-button'>Back</Button>
+                <Link to="create_2">
+                    <Button size='large' className='create-button'>Back</Button>
+                </Link>
                 <Button size='large' className='create-button'>Next</Button>
             </div>
         </div>

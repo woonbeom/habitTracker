@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from 'antd';
 import './MainTemplate.css';
 import 'antd/dist/antd.css';
@@ -21,7 +22,9 @@ function MainTemplate ({ form, onCreate ,children }: props) {
                 {/* <div className="create-button" onClick={onCreate}>
                     TODO: + 버튼 꾸미기
                 </div> */}
-                <Button size='large' className='create-button'>Add</Button>
+                <Link to="create_1">
+                    <Button size='large' className='create-button'>Add</Button>
+                </Link>
             </div>
             <section className="habits-wrapper">
                 { children }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { DatePicker, Button } from 'antd';
 import 'antd/dist/antd.css'
 
@@ -15,8 +16,12 @@ function CreatingHabbit_2 () {
                 <RangePicker onChange={onChange}/>
             </div>
             <div>
-                <Button size='large' className='create-button'>Back</Button>
-                <Button size='large' className='create-button'>Next</Button>
+                <Link to="create_1">
+                    <Button size='large' className='create-button'>Back</Button>
+                </Link>
+                <Link to="create_3">
+                    <Button size='large' className='create-button'>Next</Button>
+                </Link>
             </div>
         </div>
 

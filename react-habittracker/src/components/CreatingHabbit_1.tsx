@@ -4,11 +4,6 @@ import { Input, Button } from 'antd';
 import './CreatingHabbit_1.css'
 import 'antd/dist/antd.css'
 
-
-function HandleBackButton() {
-    <Link to="/"/>
-}
-
 function CreatingHabbit_1() {
     return (
         <div>
@@ -31,8 +26,12 @@ function CreatingHabbit_1() {
                 <Input placeholder="Action" className="long-input"/>
             </div>
             <div>
-                <Button size='large' className='create-button' onClick={HandleBackButton}>Back</Button>
-                <Button size='large' className='create-button'>Add</Button>
+                <Link to="/">
+                    <Button size='large' className='create-button'>Back</Button>
+                </Link>
+                <Link to="/create_2">
+                    <Button size='large' className='create-button'>Next</Button>
+                </Link>
             </div>
         </div>
     );

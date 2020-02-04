@@ -12,9 +12,17 @@ function CreatingHabbit_2 () {
     const onChangeDate = (date, dateString) => {
         setFromDate(dateString[0]);
         setToDate(dateString[1]);
-        console.log(`fromDate:${from}`);
-        console.log(`toDate:${to}`);
     }
+
+    const onClickNextButton = () => {
+        if (sessionStorage.getItem('habbit')) {
+            let habbit = JSON.parse(sessionStorage.getItem('habbit') || '');
+            habbit.cycle.from = from;
+            habbit.cycle.to = to;
+            sessionStorage.setItem('habbit', JSON.stringify(habbit));
+            console.log(habbit);
+        }
+    };
 
     return (
         <div>
@@ -26,7 +34,7 @@ function CreatingHabbit_2 () {
                     <Button size='large' className='create-button'>Back</Button>
                 </Link>
                 <Link to="create_3">
-                    <Button size='large' className='create-button'>Next</Button>
+                    <Button size='large' className='create-button' onClick={onClickNextButton}>Next</Button>
                 </Link>
             </div>
         </div>
